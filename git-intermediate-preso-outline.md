@@ -1,16 +1,18 @@
-# Outline for the Git intermediate presentation
+# Outline for the intermediate Git presentation
 
 ## Commits
 
 * Commit messages
 * Squashing commits
-    * how to know when you should have had one commit instead of five
-        * when you have multiple commits with the same commit message (maybe)
-        * when they're all commits for the same bug (maybe)
-        * when two commits depend on each other (definitely for this and all the rest)
-        * when, if you were going to back out a change, you'd have to revert several commits
-        * when checking out a particular commit wouldn't produce a working app
-        * when a commit just fixes a typo or missing file in the previous commit
+    * how to know when you should have had one commit instead of N
+        * maybe...
+            * when they all have the same commit message
+            * when they're all commits for the same bug
+        * definitely...
+            * when two commits depend on each other
+            * when, if you were going to back out a change, you'd have to revert all of them
+            * when checking out a particular commit wouldn't produce a working app
+            * when a commit just fixes a typo or missing file in the previous commit
 
 ## Branches
 
@@ -23,8 +25,9 @@
 
     * How to work on a branch
         * How to merge your branch back into master
+    * https://learngitbranching.js.org/ -- thanks to several people for pointing out this resource
 
-* How to undo mistakes
+## How to undo mistakes
 
     * https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/
     * Kinds of mistakes
@@ -41,12 +44,14 @@
             * you made commits on master that now you've decided should be on a branch instead -- answer: rebase
         * do I want to talk about it this way?  or just cover rebase -i and mention the problems as we fix them
     * Everything is fixable as long as you committed
-    * Uncommitted changes that you lost cannot be retrieved by Git
+    * The worst case: uncommitted changes that you lost cannot be retrieved by Git
 
     * The reflog
 
 
 * Using changelists
+    * controlling what goes in your next commit
+    * using branches instead
 * things you can do in IntelliJ with the log pane
 * the power of git log on the command line (things you _can't_ do in IntelliJ)
     * -S (pick-axe)
