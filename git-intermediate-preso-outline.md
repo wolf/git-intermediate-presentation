@@ -29,24 +29,24 @@
 
 ## How to undo mistakes
 
-    * https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/
-    * Kinds of mistakes
-        * pushed problem
-            * entirely bad commit -- answer: revert
-        * un-pushed problem with tip commit
-            * entirely bad commit -- answer: reset
-            * bad commit message -- answer: edit commit message
-            * missing a file or change to an included file -- answer: commit --amend
-        * un-pushed problem with non-tip commit
-            * entirely bad commit -- answer: rebase -i
-            * bad commit message -- answer: rebase -i
-            * missing a file or change to an included file -- answer: rebase -i
-            * you made commits on master that now you've decided should be on a branch instead -- answer: rebase
-        * do I want to talk about it this way?  or just cover rebase -i and mention the problems as we fix them
-    * Everything is fixable as long as you committed
-    * The worst case: uncommitted changes that you lost cannot be retrieved by Git
+* https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/
+* Kinds of mistakes
+    * pushed problem
+        * entirely bad commit -- answer: revert
+    * un-pushed problem with tip commit
+        * entirely bad commit -- answer: reset
+        * bad commit message -- answer: edit commit message
+        * missing a file or change to an included file -- answer: commit --amend
+    * un-pushed problem with non-tip commit
+        * entirely bad commit -- answer: rebase -i
+        * bad commit message -- answer: rebase -i
+        * missing a file or change to an included file -- answer: rebase -i
+        * you made commits on master that now you've decided should be on a branch instead -- answer: rebase
+    * do I want to talk about it this way?  or just cover rebase -i and mention the problems as we fix them
+* Everything is fixable as long as you committed
+* The worst case: uncommitted changes that you lost cannot be retrieved by Git
 
-    * The reflog
+* The reflog
 
 
 * Using changelists
