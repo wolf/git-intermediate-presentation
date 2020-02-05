@@ -40,21 +40,24 @@
 
 * Everything is fixable as long as you committed
 * The worst case: uncommitted changes that you lost cannot be retrieved by Git
+  * ...but maybe can be retrieved through local history in IntelliJ
 * <https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/>
 * Kinds of mistakes
-  * pushed problem
-    * entirely bad commit -- answer: revert
   * un-pushed problem with tip commit
     * entirely bad commit -- answer: reset
       * note that "Reset Current Branch to Here..." is --hard whereas
         VCS -> Git -> "Reset HEAD..." lets you choose
     * bad commit message -- answer: edit commit message
     * missing a file or change to an included file -- answer: commit --amend
+    * you've made commits on master that now you've decided should be on a branch instead -- answer: create
+    a branch + reset HEAD of master
   * un-pushed problem with non-tip commit
     * entirely bad commit -- answer: rebase -i
     * bad commit message -- answer: rebase -i
     * missing a file or change to an included file -- answer: rebase -i
-    * you made commits on master that now you've decided should be on a branch instead -- answer: rebase
+    * you've made commits on master that now you've decided should be on a branch instead -- answer: rebase
+  * pushed problem
+    * entirely bad commit -- answer: revert
 
 * The reflog
   * the reflog for a given branch
