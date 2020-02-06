@@ -10,13 +10,13 @@
   * <https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html>
 * Squashing commits
   * how to know when you should have had one commit instead of N
-    * maybe...
+    * probably...
       * when they all have the same commit message
       * when they're all commits for the same bug
     * definitely...
       * when two commits depend on each other
       * when, if you were going to back out a change, you'd have to revert all of them
-      * when checking out a particular commit wouldn't produce a working app
+      * when checking out a particular commit wouldn't produce a working world
       * when a commit just fixes a typo or missing file in the previous commit
   * how to squash the commits
 * Committing to save your work, then "uncommitting", leaving the changes from that commit in the tree
