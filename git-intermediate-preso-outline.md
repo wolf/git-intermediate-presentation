@@ -15,8 +15,8 @@
       * when they're all commits for the same bug
     * definitely...
       * when two commits depend on each other
-      * when, if you were going to back out a change, you'd have to revert all of them
-      * when checking out a particular commit wouldn't produce a working world
+      * when, if you were going to back out a change, you'd have to revert **all** of them
+      * when checking out a particular commit wouldn't produce a working site
       * when a commit just fixes a typo or missing file in the previous commit
   * how to squash the commits
 * Committing to save your work, then "uncommitting", leaving the changes from that commit in the tree
