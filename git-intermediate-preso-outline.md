@@ -3,10 +3,11 @@
 ## Branches
 
 * On our wiki: <http://wiki.learninga-z.com/index.php/Git_Branching_at_LAZ>
-* Why make a branch in the first place?
 * Kinds of branches
   * Private, (local-only) branches
+    * Why: compartmentalize work; especially work that touches files in common
     * Private, but you pushed it anyway
+      * Why: backup work on the central server (remember, this impacts everyone)
   * Code-review branches
   * Shared branches
   * Release branches
@@ -38,10 +39,11 @@
 
 ## How to undo mistakes
 
-* Everything is fixable as long as you committed
+* Everything is fixable in Git as long as you committed
+* <https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/>
 * The worst case: uncommitted changes that you lost cannot be retrieved by Git
   * ...but maybe can be retrieved through local history in IntelliJ
-* <https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/>
+* <https://blog.jetbrains.com/idea/2020/02/local-history-in-intellij-idea-may-save-your-life-code/>
 * Kinds of mistakes
   * un-pushed problem with tip commit
     * entirely bad commit -- answer: reset
