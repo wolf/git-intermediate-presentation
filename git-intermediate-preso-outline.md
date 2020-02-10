@@ -1,5 +1,20 @@
 # Outline for the intermediate Git presentation
 
+## Branches
+
+* On our wiki: <http://wiki.learninga-z.com/index.php/Git_Branching_at_LAZ>
+* Why make a branch in the first place?
+* Kinds of branches
+  * Private, (local-only) branches
+    * Private, but you pushed it anyway
+  * Code-review branches
+  * Shared branches
+  * Release branches
+
+* How to work on a branch
+  * How to merge your branch back into master
+* <https://learngitbranching.js.org/> -- thanks to several people for pointing out this resource
+
 ## Commits
 
 * Commit messages
@@ -20,21 +35,6 @@
       * when a commit just fixes a typo or missing file in the previous commit
   * how to squash the commits
 * Committing to save your work, then "uncommitting", leaving the changes from that commit in the tree
-
-## Branches
-
-* On our wiki: <http://wiki.learninga-z.com/index.php/Git_Branching_at_LAZ>
-* Why make a branch in the first place?
-* Kinds of branches
-  * Private, (local-only) branches
-    * Private, but you pushed it anyway
-  * Code-review branches
-  * Shared branches
-  * Release branches
-
-* How to work on a branch
-  * How to merge your branch back into master
-* <https://learngitbranching.js.org/> -- thanks to several people for pointing out this resource
 
 ## How to undo mistakes
 
